@@ -222,3 +222,48 @@ html, body {
     } 
   }
 }
+
+#services-section {
+
+  .services-wrapper {
+    margin: 100px auto;
+    text-align: center;
+    color: $black;
+
+    .services-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0 1%;
+
+        img {
+          width: 35%;
+          height: auto;
+          margin-bottom: 10%;
+        }
+        
+        h4, p {
+          color: $grey;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          font-size: 1.75em;
+          font-weight: 400;
+          margin: auto 0;
+        }
+  
+        p {
+          font-style: italic;
+          font-size: .9em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
