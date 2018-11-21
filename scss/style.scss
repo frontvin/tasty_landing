@@ -229,19 +229,19 @@ html, body {
 
     .images-wrapper {     
       margin: 5%;
+
       .welcome-image {
         position: relative;
-        display: flex;
         justify-content: center;
         align-items: center;
         
 
-        .upper-img {
+        .bottom-img {
           position: absolute;
-          top: -15%;
-          right: -10%;
-          z-index: 2;
-          width: 75%;
+          top: 40%;
+          right: 40%;
+          width: 100%;
+          z-index: -1;
         }
       }
     }
@@ -636,3 +636,249 @@ html, body {
     padding: 0.5% 0;  
   }
 }
+
+@media only screen and (max-width: 1000px) {
+
+  #banner {
+   
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  
+      h1 {
+        font-size: 25em;
+        margin: 0;
+      }
+  
+      span {
+        top: 62%;
+        left: 20%;
+      }
+    }
+  }
+
+  #menu {
+    .menu-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .mobile-nav-wrapper{ 
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    .bars-wrapper {
+      align-self: center;
+      position: absolute;
+      left: 7%;
+    }
+
+    .fa-bars {
+      color: $black;
+    }
+  }
+
+  #mobile-nav {  
+    a {
+      display: none;
+      text-decoration: none;
+      text-align: center;
+      color: $grey;
+
+      &:hover {
+        color: $grey;
+      }
+    } 
+  }
+
+  #mobile-nav.active {
+    display: block;
+    width: 100%;
+
+    a {
+      display: block;
+      padding: 1em;
+      border-bottom: 1px solid #E9E9E9;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  #banner {
+
+  .logo, nav > a {
+    display: none;
+  }
+    
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  
+      h1 {
+        font-size: 15em;
+        margin: 0;
+      }
+  
+      span {
+        font-size: 2em;
+        top: 62%;
+        left: 20%;
+      }
+    }
+  }
+
+  #menu {
+    .menu-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+
+  #welcome {
+    padding: 15%;
+
+    .welcome-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // margin: 5% auto;
+
+      .images-wrapper {     
+        // margin: 5%;
+        
+        .welcome-text {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          padding: 0;
+        }
+        
+        .welcome-image {
+          position: relative;
+          justify-content: center;
+          align-items: center;      
+  
+          .bottom-img {
+            position: absolute;
+            top: 40%;
+            right: 40%;
+            width: 100%;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    .portfolio-list {
+      display: flex;
+      flex-direction: column;
+      
+      li {
+        width: 100%;
+      } 
+    }
+  }
+
+  #reservation {
+  
+    .reservation-wrapper {
+      background: $white;
+      width: 50%;
+  
+  
+      .reservation-desc {
+        text-align: center;
+        color: $black;
+        padding: 10%;
+  
+        h2 {
+          border-bottom: 1px solid $black;
+          width: 50%;
+          margin: 0 auto;
+        }
+  
+        h4 {
+          padding-top: 5%;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  #map {
+    .map-wrapper {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  #main-footer {
+    
+    .main-footer-wrapper {
+      footer {
+  
+        .input-icon-wrap {
+          display: flex;
+          flex-direction: row;
+          width: 75%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #services-section {
+    .services-wrapper {
+      margin: 50px auto;
+  
+      .services-item-info { 
+        h2 {
+          width: 25%;
+        }
+      }
+  
+      .services-list {
+        display: flex;
+        flex-direction: column;
+  
+        li {
+          padding: 2% 1%;
+  
+          img {
+            width: 15%;
+            margin-bottom: 2%;
+          }
+          
+          p {
+            width: 75%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+}
+
