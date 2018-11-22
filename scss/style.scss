@@ -358,7 +358,7 @@ html, body {
 
   .reservation-wrapper {
     background: $white;
-    width: 30%;
+    width: 20em;
 
 
     .reservation-desc {
@@ -478,13 +478,13 @@ html, body {
 
   .map-wrapper {
     background: $white;
-    width: 25%;
+    width: 20em;
     margin: 0 auto;
 
     .map-desc {
       text-align: center;
       color: $black;
-      padding: 10%;
+      padding: 5%;
     }
 
     .map-item {
@@ -654,6 +654,50 @@ html, body {
       span {
         top: 62%;
         left: 20%;
+      }
+    }
+  }
+
+  #services-section {
+    .services-wrapper {
+  
+      .services-item-info { 
+        h2 {
+          border-bottom: 1px solid $black;
+          margin: 0 auto !important;
+          width: 10%;
+        }
+  
+        h2, h4 {
+          margin: 0;
+          padding-top: 2%;
+        }
+      }
+  
+      .services-list {
+        display: flex;
+        flex-wrap: wrap;
+  
+        li {
+          width: 50%;
+          padding-bottom: 5%;
+  
+          img {
+            width: 25%;
+          }
+          
+          h4 {
+            padding-bottom: 5%;
+          }
+
+          p {
+            font-style: italic;
+            font-size: .9em;
+            line-height: 1.5em;
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
       }
     }
   }
@@ -861,18 +905,22 @@ html, body {
   
       .services-list {
         display: flex;
-        flex-direction: column;
   
         li {
           padding: 2% 1%;
+          width: 100%;
   
           img {
             width: 15%;
             margin-bottom: 2%;
           }
-          
+
+          h4 {
+            padding-bottom: 2%;
+          }
+
           p {
-            width: 75%;
+            width: 70%;
             margin: 0 auto;
           }
         }
